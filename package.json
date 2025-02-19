@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "docusaurus": "docusaurus",
-    "tina": "tinacms dev -c \"yarn start\" ",
-    "start": "docusaurus start",
+    "tina": "tinacms dev -c \"npm run start\" ",
+    "start": "docusaurus start --poll 100",
     "build": "tinacms build && docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
@@ -17,12 +17,15 @@
     "@docusaurus/core": "3.3.2",
     "@docusaurus/preset-classic": "3.3.2",
     "@mdx-js/react": "^3.0.1",
-    "@tinacms/cli": "^1.5.29",
+    "@tinacms/cli": "^1.5.49",
+    "@tinacms/datalayer": "^1.2.37",
     "clsx": "^2.1.1",
+    "mongodb-level": "^0.0.4",
     "prism-react-renderer": "^2.3.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "tinacms": "^1.5.20",
+    "tinacms": "^1.6.7",
+    "tinacms-gitprovider-github": "^1.0.8",
     "title": "^3.5.3"
   },
   "devDependencies": {

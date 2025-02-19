@@ -7,6 +7,7 @@ import { YouTubeEmbedBlockTemplate } from "../src/components/YouTubeEmbed/templa
 import { MDXTemplates } from "../src/theme/template";
 import { docusaurusDate, titleFromSlug } from "../util";
 import title from "title";
+import { tinaTableTemplate } from "tinacms";
 
 const WarningIcon = (props) => {
   return (
@@ -157,7 +158,7 @@ const DocsCollection = {
       name: "body",
       label: "Body",
       isBody: true,
-      templates: [...MDXTemplates],
+      templates: [...MDXTemplates, tinaTableTemplate],
     },
   ],
 };
