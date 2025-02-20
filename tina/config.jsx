@@ -8,6 +8,7 @@ import { MDXTemplates } from "../src/theme/template";
 import { docusaurusDate, titleFromSlug } from "../util";
 import title from "title";
 import { tinaTableTemplate } from "tinacms";
+import { CustomAuthProvider } from "./customAuthProvider";
 
 const WarningIcon = (props) => {
   return (
@@ -818,7 +819,7 @@ const PagesCollection = {
 };
 
 export default defineConfig({
-  contentApiUrlOverride: "http://localhost:3000/gql",
+  contentApiUrlOverride: "",
   build: {
     outputFolder: "admin",
     publicFolder: "static",
@@ -833,4 +834,6 @@ export default defineConfig({
       SettingsCollection,
     ],
   },
+  authProvider: new CustomAuthProvider()
+
 });

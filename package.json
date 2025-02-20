@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "docusaurus": "docusaurus",
-    "tina": "tinacms dev -c \"npm run start\" ",
+    "tina": "TINA_PUBLIC_IS_LOCAL=false && tinacms dev -c \"npm run start\" ",
     "start": "docusaurus start --poll 100",
     "build": "tinacms build && docusaurus build",
     "swizzle": "docusaurus swizzle",
